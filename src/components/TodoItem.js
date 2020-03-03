@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
 
-export default class TodoInput extends Component {
+export default class TodoItem extends Component {
     render() {
         return (
             <div>
-                Insert your Todo Item
+                I am an todo Item
             </div>
         )
     }
 }
-

@@ -1,10 +1,13 @@
 import React from 'react';
-
+import TodoInput from './components/TodoInput';
+import TodoList from './components/TodoList';
 
 function App() {
   return (
     <div>
-      To do In React that will be refactored in Typescript later
+      <h1> To do In React that will be refactored in Typescript later </h1>
+      <TodoInput />
+      <TodoList />
     </div>
   );
 }

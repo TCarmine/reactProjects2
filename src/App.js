@@ -37,6 +37,12 @@ class App extends Component {
       }
     )
   }
+
+  deleteList = (e) =>{
+    this.setState({
+      items:[]
+    })
+  }
   render(){
     return (
       <div className="container">
@@ -49,7 +55,10 @@ class App extends Component {
               handleChange = {this.handleChange} 
               handleSubmit = {this.handleSubmit }    
           />
-          <TodoList  items={this.state.items} />
+          <TodoList  
+              items={this.state.items}
+              deleteList = {this.deleteList}
+          />
              
        
 

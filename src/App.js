@@ -20,12 +20,10 @@ class App extends Component {
   };
   handleSubmit = e =>{
     e.preventDefault();
-    const newItem={
+        const newItem={
       id: this.state.id,
       title: this.state.item
     }
-
-
     const updatedItems = [...this.state.items, newItem];
 
     this.setState(
@@ -35,7 +33,7 @@ class App extends Component {
         id:uuid(),
         editItem:false
       }
-    )
+    );
   };
 
   deleteList = (e) =>{

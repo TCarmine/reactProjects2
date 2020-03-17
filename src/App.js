@@ -36,13 +36,22 @@ class App extends Component {
         editItem:false
       }
     )
-  }
+  };
 
   deleteList = (e) =>{
     this.setState({
       items:[]
     })
-  }
+  };
+
+  deleteItem = (id) => {
+    const filteredItem = this.state.items.filter(item =>
+      item.id !== id)
+      this.setState=({
+         items:filteredItem
+      });
+  }; 
+  
   render(){
     return (
       <div className="container">
@@ -58,6 +67,7 @@ class App extends Component {
           <TodoList  
               items={this.state.items}
               deleteList = {this.deleteList}
+              deleteItem = {this.deleteItem}
           />
              
        

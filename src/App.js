@@ -36,7 +36,7 @@ class App extends Component {
     );
   };
 
-  deleteList = (e) =>{
+  clearList = (e) =>{
     this.setState({
       items:[]
     })
@@ -64,7 +64,7 @@ class App extends Component {
           />
           <TodoList  
               items={this.state.items}
-              deleteList = {this.deleteList}
+              clearList = {this.clearList}
               deleteItem = {this.deleteItem}
           />
              

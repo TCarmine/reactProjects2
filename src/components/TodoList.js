@@ -17,7 +17,7 @@ export default class TodoList extends Component {
                            return <TodoItem 
                                     key={item.id} 
                                     title={item.title} 
-                                    deleteItem={()=>deleteItem(item.id)}
+                                    deleteItem={()=> deleteItem(item.id)}
                                     />;
                                                    
                         })}  
@@ -26,7 +26,7 @@ export default class TodoList extends Component {
                         <button 
                             type="button" 
                             className="btn btn-danger btn-block text-capitalize mt-5"
-                            onClick={clearList}
+                            onClick={()=>clearList()}
                             >
                                 clear list
                         </button>

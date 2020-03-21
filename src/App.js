@@ -45,7 +45,7 @@ class App extends Component {
   deleteItem = (id) => {
     const filteredItem = this.state.items.filter(item =>
       item.id !== id)
-      this.setState=({
+      this.setState({
          items:filteredItem
       });
   }; 

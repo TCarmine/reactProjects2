@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export default class TodoItem extends Component {
     render() {
-        const { title, deleteItem } = this.props;
+        const { title, deleteItem, handleEdit } = this.props;
      
 
         return (
@@ -10,7 +10,8 @@ export default class TodoItem extends Component {
                 <h6 >{title}  </h6>
                 
                 <div className="todo-icon">
-                    <span className="mx-2 text-success">
+                    <span className="mx-2 text-success"
+                           onClick={handleEdit}>
                         <i className="fas fa-pen" />
                     </span>
                     <span  className="mx-2 text-danger" 
